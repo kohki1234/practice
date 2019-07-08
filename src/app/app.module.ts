@@ -8,6 +8,14 @@ import { MainpageComponent } from './mainpage/mainpage.component';
 import { MobileSub2Component } from './mobile-sub2/mobile-sub2.component';
 import { InternetComponent } from './internet/internet.component';
 import { InternetSubComponent } from './internet-sub/internet-sub.component';
+import { InternetHikariComponent } from './internet-hikari/internet-hikari.component';
+import { ShoppingComponent } from './shopping/shopping.component';
+import { ShoppingSubComponent } from './shopping-sub/shopping-sub.component';
+import { ShoppingAmazonComponent } from './shopping-amazon/shopping-amazon.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { ElectricityComponent } from './electricity/electricity.component';
+import { ElectricitySubComponent } from './electricity-sub/electricity-sub.component';
+import { ElectricityChargeComponent } from './electricity-charge/electricity-charge.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +25,15 @@ import { InternetSubComponent } from './internet-sub/internet-sub.component';
     MainpageComponent,
     MobileSub2Component,
     InternetComponent,
-    InternetSubComponent
+    InternetSubComponent,
+    InternetHikariComponent,
+    ShoppingComponent,
+    ShoppingSubComponent,
+    ShoppingAmazonComponent,
+    NotFoundComponent,
+    ElectricityComponent,
+    ElectricitySubComponent,
+    ElectricityChargeComponent
   ],
   imports: [
     BrowserModule,
@@ -45,6 +61,38 @@ import { InternetSubComponent } from './internet-sub/internet-sub.component';
        {
         path: 'internet/sub',
         component: InternetSubComponent
+       },
+       {
+        path: 'internet/sub/hikari',
+        component: InternetHikariComponent
+       },
+       {
+        path: 'shopping',
+        component: ShoppingComponent
+       },
+       {
+        path: 'shopping/sub',
+        component: ShoppingSubComponent
+       },
+       {
+        path: 'shopping/sub/amazon',
+        component: ShoppingAmazonComponent
+       },
+       {
+        path: 'electricity',
+        component: ElectricityComponent
+       },
+       {
+        path: 'electricity/sub',
+        component: ElectricitySubComponent
+       },
+       {
+        path: 'electricity/sub/charge',
+        component: ElectricityChargeComponent
+       },
+       {
+        path: '**',
+        component: NotFoundComponent
        },
     ])
 
