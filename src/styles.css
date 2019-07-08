@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+
+h1 {
+    color: #6594e0;/*文字色*/
+    /*線の種類（点線）2px 線色*/
+    border-bottom: dashed 2px #6594e0;
+}
+
+#practice {
+    width: 100%;
+    height: 500px;
+}
