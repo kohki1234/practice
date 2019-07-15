@@ -32,6 +32,18 @@
       }
     }
     );
+
+    lpTag.identities=[];
+    lpTag.identities.push(identityFn);
+
+    function identityFn(callback) {
+    callback({
+  "iss": "https://liveperson.com",
+  "sub": "ksato13",
+  "iat": 1562571086,
+  "exp": 2162571086
+  });
+      }
     </script>
 
     
